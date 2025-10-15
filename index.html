@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NeoFlow Agency — Automatisation IA</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <div class="container header-inner">
+      <a href="#" class="logo">NeoFlow</a>
+      <nav id="nav-menu">
+        <a href="#automations">Automatisations</a>
+        <a href="#ia">L’IA NeoFlow</a>
+        <a href="#about">À propos</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <button id="nav-toggle" aria-label="Toggle navigation">☰</button>
+    </div>
+  </header>
+
+  <section class="hero hero-bg">
+    <div class="container hero-inner">
+      <h1>Automatisez. Optimisez. Gagnez du temps.</h1>
+      <h2>NeoFlow Agency transforme vos tâches répétitives en workflows intelligents et efficaces.</h2>
+      <button class="btn-primary" aria-label="Commencer">Commencer</button>
+    </div>
+  </section>
+
+  <section id="automations" class="section automations">
+    <div class="container">
+      <h2>Découvrez nos automatisations prêtes à l’emploi</h2>
+      <p class="subtitle">Gagnez du temps et optimisez votre business dès aujourd’hui.</p>
+      <div class="grid cards">
+        <!-- Exemple de card, à dupliquer/modifier selon offres réelles -->
+        <div class="card">
+          <img src="assets/about-image.jpg" alt="Automatisation exemple" />
+          <h3>Workflow email & CRM</h3>
+          <p>Automatisation des suivis et des relances clients.</p>
+          <button class="btn-secondary" aria-label="Tester cette automatisation">Tester</button>
+          <button class="btn-primary" aria-label="Acheter cette automatisation">Acheter</button>
+        </div>
+        <div class="card">
+          <img src="assets/about-image.jpg" alt="Automatisation exemple" />
+          <h3>Gestion tickets & support</h3>
+          <p>Intégration AI & notifs automatiques.</p>
+          <button class="btn-secondary" aria-label="Tester cette automatisatisation">Tester</button>
+          <button class="btn-primary" aria-label="Acheter cette automatisation">Acheter</button>
+        </div>
+        <div class="card">
+          <img src="assets/about-image.jpg" alt="Automatisation exemple" />
+          <h3>Analyse & reporting</h3>
+          <p>Dashboards automatiques et alertes.</p>
+          <button class="btn-secondary" aria-label="Tester cette automatisation">Tester</button>
+          <button class="btn-primary" aria-label="Acheter cette automatisation">Acheter</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="ia" class="section ia-section">
+    <div class="container">
+      <h2>Parlez directement avec notre IA</h2>
+      <p class="subtitle">Définissez votre workflow personnalisé et obtenez des réponses instantanées.</p>
+      <div id="neo-chat" role="log" aria-live="polite">
+        <!-- messages seront injectés ici -->
+      </div>
+      <form id="chat-form">
+        <label for="chat-input" class="visually-hidden">Message</label>
+        <input type="text" id="chat-input" placeholder="Posez votre question..." aria-label="Message" />
+        <button type="submit" id="chat-send" class="btn-primary" aria-label="Envoyer message">Envoyer</button>
+      </form>
+    </div>
+  </section>
+
+  <section id="about" class="section about-section">
+    <div class="container about-inner">
+      <div class="about-text">
+        <h2>Qui sommes-nous ?</h2>
+        <p>
+          NeoFlow Agency est votre partenaire en automatisation IA. Nous créons des workflows personnalisés qui
+          simplifient vos processus et augmentent votre productivité. Notre mission : rendre l’IA accessible à tous
+          et transformer la façon dont vous travaillez.
+        </p>
+      </div>
+      <div class="about-image">
+        <img src="assets/about-image.jpg" alt="Photo de l’équipe NeoFlow" />
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="section contact-section">
+    <div class="container">
+      <h2>Obtenez votre devis personnalisé</h2>
+      <p class="subtitle">Remplissez le formulaire pour que notre IA définisse votre workflow parfait.</p>
+      <form id="lead-form">
+        <label for="name">Nom :</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="email">Email :</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="phone">Téléphone :</label>
+        <input type="tel" id="phone" name="phone" required />
+
+        <label for="workflowType">Type de workflow :</label>
+        <input type="text" id="workflowType" name="workflow_type" required />
+
+        <!-- Hook N8n -->
+        <input type="hidden" name="n8n_webhook" value="PLACEHOLDER_N8N_WEBHOOK_URL" />
+
+        <button type="submit" class="btn-primary" aria-label="Envoyer ma demande">Envoyer ma demande</button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container footer-inner">
+      <div class="footer-left">
+        © 2025 NeoFlow Agency – Tous droits réservés
+      </div>
+      <div class="footer-center">
+        <a href="#automations">Automatisations</a>
+        <a href="#ia">IA</a>
+        <a href="#about">À propos</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div class="footer-right">
+        <!-- icônes sociales, placeholders -->
+        <a href="#" aria-label="Twitter">T</a>
+        <a href="#" aria-label="LinkedIn">L</a>
+        <a href="#" aria-label="GitHub">G</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="config.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
